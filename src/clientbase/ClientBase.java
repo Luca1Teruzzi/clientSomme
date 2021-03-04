@@ -33,13 +33,11 @@ public class ClientBase {
             String s = "";
             
             while (!s.equals("exit")) {
-                System.out.println("Inserire frase da inviare al server:");
+                System.out.println("Inserire numero da inviare al server:");
                 s = tastiera.nextLine();
                 System.out.println("frase inserita: " + s);
                 out.println(s);
-                String risposta = in.readLine();
-                System.out.println("risposta del server: " + risposta);
-                System.out.println("Hai inserito " + risposta.split(": ")[1] + " caratteri"); 
+                
             }
 
             in.close();
